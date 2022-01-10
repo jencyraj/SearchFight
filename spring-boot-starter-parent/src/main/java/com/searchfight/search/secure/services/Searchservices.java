@@ -18,17 +18,9 @@ import static java.util.Collections.singletonList;
 
 public class Searchservices {
 
-    
-   
-    
-    
-    
-	
-	FactorySearch factorysearch = new FactorySearch();
-	public Searchservices(FactorySearch factorysearch_val) {
-		factorysearch =factorysearch_val;
-		
-	}
+
+	@Autowired
+	private final FactorySearch factorysearch;
 
 	public Map<String, List<teamResult>> search(String[] terms) 
     {
